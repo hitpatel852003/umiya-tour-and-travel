@@ -28,7 +28,7 @@ function Packages() {
     </div>
   </div>
       {/* Package Start */}
-      <div className="container-xxl py-5">
+      {/* <div className="container-xxl py-5">
       <div className="container">
         <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
           <h6 className="section-title bg-white text-center text-primary px-3">
@@ -186,10 +186,10 @@ function Packages() {
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
     {/* Package End */}
     {/* Booking Start */}
-    <div className="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+    {/* <div className="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
       <div className="container">
         <div className="booking p-5">
           <div className="row g-5 align-items-center">
@@ -291,10 +291,10 @@ function Packages() {
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
     {/* Booking Start */}
     {/* Process Start */}
-    <div className="container-xxl py-5">
+    {/* <div className="container-xxl py-5">
       <div className="container">
         <div className="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
           <h6 className="section-title bg-white text-center text-primary px-3">
@@ -365,7 +365,7 @@ function Packages() {
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
     {/* Process Start */}
     </div>
   )

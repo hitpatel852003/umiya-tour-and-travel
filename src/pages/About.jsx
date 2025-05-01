@@ -32,7 +32,7 @@ function About() {
   </div>
         
             {/* About Start */}
-    <div className="container-xxl py-5">
+    {/* <div className="container-xxl py-5">
       <div className="container">
         <div className="row g-5">
           <div
@@ -109,10 +109,10 @@ function About() {
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
     {/* About End */}
     {/* Team Start */}
-    <div className="container-xxl py-5">
+    {/* <div className="container-xxl py-5">
       <div className="container">
         <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
           <h6 className="section-title bg-white text-center text-primary px-3">
@@ -223,7 +223,7 @@ function About() {
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
     {/* Team End */}
     </div>
   )

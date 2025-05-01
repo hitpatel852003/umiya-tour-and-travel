@@ -1,5 +1,7 @@
 import React from 'react'
 
+
+
 export default function Home() {
   return (
     <div>
@@ -15,25 +17,30 @@ export default function Home() {
                 ipsum lorem sit
               </p>
               <div className="position-relative w-75 mx-auto animated slideInDown">
-                <input
+                {/* <input
                   className="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5"
                   type="text"
                   placeholder="Eg: Thailand"
-                />
+                /> */}
                 <button
                   type="button"
-                  className="btn btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2"
-                  style={{ marginTop: 7 }}
+                  className=" rounded-pill py-2 px-4 "
+                  style={{
+                    marginTop: 7, backgroundColor: "#0B1A39",
+                    color: "white",
+                    border: "1px solid  #0B1A39",
+                    height: "50px"
+                  }}
                 >
-                  Search
+                  Connect To Whatapp
                 </button>
               </div>
             </div>
           </div>
         </div>
       </div>
-            {/* About Start */}
-    <div className="container-xxl py-5">
+      {/* About Start */}
+      {/* <div className="container-xxl py-5">
       <div className="container">
         <div className="row g-5">
           <div
@@ -51,11 +58,11 @@ export default function Home() {
             </div>
           </div>
           <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-            <h6 className="section-title bg-white text-start text-primary pe-3">
+            <h6 className="section-title bg-white text-start pe-3" style={{color:"#0B1A39"}}>
               About Us
             </h6>
-            <h1 className="mb-4">
-              Welcome to <span className="text-primary">Tourist</span>
+            <h1 className="mb-4" style={{color:"#0B1A39"}}>
+              Welcome to <span  style={{color:"#0B1A39"}}>Tourist</span>
             </h1>
             <p className="mb-4">
               Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
@@ -69,174 +76,134 @@ export default function Home() {
             <div className="row gy-2 gx-4 mb-4">
               <div className="col-sm-6">
                 <p className="mb-0">
-                  <i className="fa fa-arrow-right text-primary me-2" />
-                  First Class Flights
+                  <i className="fa fa-arrow-right me-2" style={{color:"#0B1A39"}}/>
+                  First className Flights
                 </p>
               </div>
               <div className="col-sm-6">
                 <p className="mb-0">
-                  <i className="fa fa-arrow-right text-primary me-2" />
+                  <i className="fa fa-arrow-right me-2" style={{color:"#0B1A39"}}/>
                   Handpicked Hotels
                 </p>
               </div>
               <div className="col-sm-6">
                 <p className="mb-0">
-                  <i className="fa fa-arrow-right text-primary me-2" />5 Star
+                  <i className="fa fa-arrow-right me-2" style={{color:"#0B1A39"}}/>5 Star
                   Accommodations
                 </p>
               </div>
               <div className="col-sm-6">
                 <p className="mb-0">
-                  <i className="fa fa-arrow-right text-primary me-2" />
+                  <i className="fa fa-arrow-right me-2" style={{color:"#0B1A39"}}/>
                   Latest Model Vehicles
                 </p>
               </div>
               <div className="col-sm-6">
                 <p className="mb-0">
-                  <i className="fa fa-arrow-right text-primary me-2" />
+                  <i className="fa fa-arrow-right  me-2" style={{color:"#0B1A39"}}/>
                   150 Premium City Tours
                 </p>
               </div>
               <div className="col-sm-6">
                 <p className="mb-0">
-                  <i className="fa fa-arrow-right text-primary me-2" />
+                  <i className="fa fa-arrow-right me-2" style={{color:"#0B1A39"}}/>
                   24/7 Service
                 </p>
               </div>
             </div>
-            <a className="btn btn-primary py-3 px-5 mt-2" href="">
+            <a className=" py-3 px-5 mt-2" href="" style={{backgroundColor:"#0B1A39", color:"white"}}>
               Read More
             </a>
           </div>
         </div>
       </div>
-    </div>
-    {/* About End */}
-    {/* Service Start */}
-    <div className="container-xxl py-5">
-      <div className="container">
-        <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
-          <h6 className="section-title bg-white text-center text-primary px-3">
-            Services
-          </h6>
-          <h1 className="mb-5">Our Services</h1>
-        </div>
-        <div className="row g-4">
-          <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div className="service-item rounded pt-3">
-              <div className="p-4">
-                <i className="fa fa-3x fa-globe text-primary mb-4" />
-                <h5>WorldWide Tours</h5>
-                <p>
-                  Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
-                  amet diam
-                </p>
+    </div> */}
+      {/* About End */}
+      {/* Service Start */}
+      <div className="container-xxl py-5">
+        <div className="container">
+          <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 className="section-title bg-white text-center px-3" style={{ color: "#0B1A39" }}>
+              Services
+            </h6>
+            <h1 className="mb-5" style={{ color: "#0B1A39" }}>Our Services</h1>
+          </div>
+          <div className="row g-4">
+            <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div className="service-item rounded pt-3">
+                <div className="p-4">
+                  <i className="fa fa-3x fa-plane mb-4" style={{ color: "#0B1A39" }} />
+                  <h5>Flights Booking</h5>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div className="service-item rounded pt-3">
-              <div className="p-4">
-                <i className="fa fa-3x fa-hotel text-primary mb-4" />
-                <h5>Hotel Reservation</h5>
-                <p>
-                  Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
-                  amet diam
-                </p>
+            <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+              <div className="service-item rounded pt-3">
+                <div className="p-4">
+                  <i className="fa fa-3x fa-hotel mb-4" style={{ color: "#0B1A39" }} />
+                  <h5>Hotel Booking</h5>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div className="service-item rounded pt-3">
-              <div className="p-4">
-                <i className="fa fa-3x fa-user text-primary mb-4" />
-                <h5>Travel Guides</h5>
-                <p>
-                  Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
-                  amet diam
-                </p>
+            <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div className="service-item rounded pt-3">
+                <div className="p-4">
+                  <i className="fa fa-3x fa-users mb-4" style={{ color: "#0B1A39" }} />
+                  <h5>Group Booking</h5>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-            <div className="service-item rounded pt-3">
-              <div className="p-4">
-                <i className="fa fa-3x fa-cog text-primary mb-4" />
-                <h5>Event Management</h5>
-                <p>
-                  Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
-                  amet diam
-                </p>
+            <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div className="service-item rounded pt-3">
+                <div className="p-4">
+                  <i className="fa fa-3x fa-umbrella-beach mb-4" style={{ color: "#0B1A39" }} />
+                  <h5>Holiday Packages</h5>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div className="service-item rounded pt-3">
-              <div className="p-4">
-                <i className="fa fa-3x fa-globe text-primary mb-4" />
-                <h5>WorldWide Tours</h5>
-                <p>
-                  Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
-                  amet diam
-                </p>
+            <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div className="service-item rounded pt-3">
+                <div className="p-4">
+                  <i className="fa fa-3x fa-ticket-alt mb-4" style={{ color: "#0B1A39" }} />
+                  <h5>Ticket Booking</h5>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div className="service-item rounded pt-3">
-              <div className="p-4">
-                <i className="fa fa-3x fa-hotel text-primary mb-4" />
-                <h5>Hotel Reservation</h5>
-                <p>
-                  Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
-                  amet diam
-                </p>
+            <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+              <div className="service-item rounded pt-3">
+                <div className="p-4">
+                  <i className="fa fa-3x fa-briefcase mb-4" style={{ color: "#0B1A39" }} />
+                  <h5>Mice</h5>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div className="service-item rounded pt-3">
-              <div className="p-4">
-                <i className="fa fa-3x fa-user text-primary mb-4" />
-                <h5>Travel Guides</h5>
-                <p>
-                  Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
-                  amet diam
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-            <div className="service-item rounded pt-3">
-              <div className="p-4">
-                <i className="fa fa-3x fa-cog text-primary mb-4" />
-                <h5>Event Management</h5>
-                <p>
-                  Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
-                  amet diam
-                </p>
+            <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div className="service-item rounded pt-3">
+                <div className="p-4">
+                  <i className="fa fa-3x fa-heart mb-4" style={{ color: "#0B1A39" }} />
+                  <h5>Destination Wedding</h5>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    {/* Service End */}
-    {/* Destination Start */}
-    <div className="container-xxl py-5 destination">
+      {/* Service End */}
+      {/* Destination Start inida */}
+      <div className="container-xxl py-5 destination">
       <div className="container">
         <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
           <h6 className="section-title bg-white text-center text-primary px-3">
             Destination
           </h6>
-          <h1 className="mb-5">Popular Destination</h1>
+          <h1 className="mb-5">Popular Indian Destination</h1>
         </div>
         <div className="row g-3">
           <div className="col-lg-7 col-md-6">
             <div className="row g-3">
-              <div
-                className="col-lg-12 col-md-12 wow zoomIn"
-                data-wow-delay="0.1s"
+            <div
+                className="col-lg-6 col-md-12 wow zoomIn"
+                data-wow-delay="0.3s"
               >
                 <a
                   className="position-relative d-block overflow-hidden"
@@ -244,14 +211,11 @@ export default function Home() {
                 >
                   <img
                     className="img-fluid"
-                    src="assets/img/destination-1.jpg"
+                    src="assets/img/taj.jpg"
                     alt=""
                   />
-                  <div className="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">
-                    30% OFF
-                  </div>
                   <div className="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">
-                    Thailand
+                  Agra, Uttar Pradesh
                   </div>
                 </a>
               </div>
@@ -265,19 +229,17 @@ export default function Home() {
                 >
                   <img
                     className="img-fluid"
-                    src="assets/img/destination-2.jpg"
+                    src="assets/img/goa.jpg"
                     alt=""
                   />
-                  <div className="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">
-                    25% OFF
-                  </div>
+                  
                   <div className="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">
-                    Malaysia
+                    Goa
                   </div>
                 </a>
               </div>
               <div
-                className="col-lg-6 col-md-12 wow zoomIn"
+                className="col-lg-12 col-md-12 wow zoomIn"
                 data-wow-delay="0.5s"
               >
                 <a
@@ -286,17 +248,32 @@ export default function Home() {
                 >
                   <img
                     className="img-fluid"
-                    src="assets/img/destination-3.jpg"
+                    src="assets/img/kerala.jpg"
                     alt=""
                   />
-                  <div className="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">
-                    35% OFF
-                  </div>
                   <div className="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">
-                    Australia
+                  Kerala
                   </div>
                 </a>
               </div>
+              {/* <div
+                className="col-lg-6 col-md-12 wow zoomIn"
+                data-wow-delay="0.3s"
+              >
+                <a
+                  className="position-relative d-block overflow-hidden"
+                  href=""
+                >
+                  <img
+                    className="img-fluid"
+                    src="assets/img/ladakh.jpg"
+                    alt=""
+                  />
+                  <div className="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">
+                  Manali, Himachal Pradesh
+                  </div>
+                </a>
+              </div> */}
             </div>
           </div>
           <div
@@ -310,24 +287,132 @@ export default function Home() {
             >
               <img
                 className="img-fluid position-absolute w-100 h-100"
-                src="assets/img/destination-4.jpg"
+                src="assets/img/jaipur.jpg"
                 alt=""
                 style={{ objectFit: "cover" }}
               />
-              <div className="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">
-                20% OFF
-              </div>
               <div className="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">
-                Indonesia
+              Jaipur, Rajasthan
               </div>
             </a>
           </div>
         </div>
       </div>
     </div>
-    {/* Destination Start */}
-    {/* Package Start */}
-    <div className="container-xxl py-5">
+      {/* Destination Start */}
+       {/* Destination Start world */}
+       <div className="container-xxl py-5 destination">
+      <div className="container">
+        <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
+          <h6 className="section-title bg-white text-center text-primary px-3">
+            Destination
+          </h6>
+          <h1 className="mb-5">Popular International Destinations</h1>
+        </div>
+        <div className="row g-3">
+          <div
+            className="col-lg-5 col-md-6 wow zoomIn"
+            data-wow-delay="0.7s"
+            style={{ minHeight: 350 }}
+          >
+            <a
+              className="position-relative d-block h-100 overflow-hidden"
+              href=""
+            >
+              <img
+                className="img-fluid position-absolute w-100 h-100"
+                src="assets/img/burj khalifa.jpg"
+                alt=""
+                style={{ objectFit: "cover" }}
+              />
+              <div className="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">
+              Dubai, UAE
+              </div>
+            </a>
+          </div>
+          <div className="col-lg-7 col-md-6">
+            <div className="row g-3">
+            <div
+                className="col-lg-12 col-md-12 wow zoomIn"
+                data-wow-delay="0.3s"
+              >
+                <a
+                  className="position-relative d-block overflow-hidden"
+                  href=""
+                >
+                  <img
+                    className="img-fluid"
+                    src="assets/img/thailand.jpg"
+                    alt=""
+                  />
+                  <div className="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">
+                  Thailand
+                  </div>
+                </a>
+              </div>
+              {/* <div
+                className="col-lg-6 col-md-12 wow zoomIn"
+                data-wow-delay="0.3s"
+              >
+                <a
+                  className="position-relative d-block overflow-hidden"
+                  href=""
+                >
+                  <img
+                    className="img-fluid"
+                    src="assets/img/thailand.jpg"
+                    alt=""
+                  />
+                  
+                  <div className="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">
+                  Thailand 
+                  </div>
+                </a>
+              </div> */}
+              <div
+                className="col-lg-6 col-md-12 wow zoomIn"
+                data-wow-delay="0.5s"
+              >
+                <a
+                  className="position-relative d-block overflow-hidden"
+                  href=""
+                >
+                  <img
+                    className="img-fluid"
+                    src="assets/img/maldives.jpg"
+                    alt=""
+                  />
+                  <div className="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">
+                  Maldives
+                  </div>
+                </a>
+              </div>
+              <div
+                className="col-lg-6 col-md-12 wow zoomIn"
+                data-wow-delay="0.3s"
+              >
+                <a
+                  className="position-relative d-block overflow-hidden"
+                  href=""
+                >
+                  <img
+                    className="img-fluid"
+                    src="assets/img/singapur1.jpg"
+                    alt=""
+                  />
+                  <div className="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">
+                  SIngapur
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      {/* Destination Start */}
+      {/* Package Start */}
+      {/* <div className="container-xxl py-5">
       <div className="container">
         <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
           <h6 className="section-title bg-white text-center text-primary px-3">
@@ -485,10 +570,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </div>
-    {/* Package End */}
-    {/* Booking Start */}
-    <div className="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+    </div> */}
+      {/* Package End */}
+      {/* Booking Start */}
+      {/* <div className="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
       <div className="container">
         <div className="booking p-5">
           <div className="row g-5 align-items-center">
@@ -590,10 +675,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </div>
-    {/* Booking Start */}
-    {/* Process Start */}
-    <div className="container-xxl py-5">
+    </div> */}
+      {/* Booking Start */}
+      {/* Process Start */}
+      {/* <div className="container-xxl py-5">
       <div className="container">
         <div className="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
           <h6 className="section-title bg-white text-center text-primary px-3">
@@ -664,188 +749,188 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </div>
-    {/* Process Start */}
-    {/* Team Start */}
-    <div className="container-xxl py-5">
-      <div className="container">
-        <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
-          <h6 className="section-title bg-white text-center text-primary px-3">
-            Travel Guide
-          </h6>
-          <h1 className="mb-5">Meet Our Guide</h1>
-        </div>
-        <div className="row g-4">
-          <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div className="team-item">
-              <div className="overflow-hidden">
-                <img className="img-fluid" src="assets/img/team-1.jpg" alt="" />
-              </div>
-              <div
-                className="position-relative d-flex justify-content-center"
-                style={{ marginTop: "-19px" }}
-              >
-                <a className="btn btn-square mx-1" href="">
-                  <i className="fab fa-facebook-f" />
-                </a>
-                <a className="btn btn-square mx-1" href="">
-                  <i className="fab fa-twitter" />
-                </a>
-                <a className="btn btn-square mx-1" href="">
-                  <i className="fab fa-instagram" />
-                </a>
-              </div>
-              <div className="text-center p-4">
-                <h5 className="mb-0">Full Name</h5>
-                <small>Designation</small>
+    </div> */}
+      {/* Process Start */}
+      {/* Team Start */}
+      <div className="container-xxl py-5">
+        <div className="container">
+          <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 className="section-title bg-white text-center text-primary px-3">
+              Travel Guide
+            </h6>
+            <h1 className="mb-5">Meet Our Guide</h1>
+          </div>
+          <div className="row g-4">
+            <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div className="team-item">
+                <div className="overflow-hidden">
+                  <img className="img-fluid" src="assets/img/team-1.jpg" alt="" />
+                </div>
+                <div
+                  className="position-relative d-flex justify-content-center"
+                  style={{ marginTop: "-19px" }}
+                >
+                  <a className="btn btn-square mx-1" href="">
+                    <i className="fab fa-facebook-f" />
+                  </a>
+                  <a className="btn btn-square mx-1" href="">
+                    <i className="fab fa-twitter" />
+                  </a>
+                  <a className="btn btn-square mx-1" href="">
+                    <i className="fab fa-instagram" />
+                  </a>
+                </div>
+                <div className="text-center p-4">
+                  <h5 className="mb-0">Full Name</h5>
+                  <small>Designation</small>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div className="team-item">
-              <div className="overflow-hidden">
-                <img className="img-fluid" src="assets/img/team-2.jpg" alt="" />
-              </div>
-              <div
-                className="position-relative d-flex justify-content-center"
-                style={{ marginTop: "-19px" }}
-              >
-                <a className="btn btn-square mx-1" href="">
-                  <i className="fab fa-facebook-f" />
-                </a>
-                <a className="btn btn-square mx-1" href="">
-                  <i className="fab fa-twitter" />
-                </a>
-                <a className="btn btn-square mx-1" href="">
-                  <i className="fab fa-instagram" />
-                </a>
-              </div>
-              <div className="text-center p-4">
-                <h5 className="mb-0">Full Name</h5>
-                <small>Designation</small>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div className="team-item">
-              <div className="overflow-hidden">
-                <img className="img-fluid" src="assets/img/team-3.jpg" alt="" />
-              </div>
-              <div
-                className="position-relative d-flex justify-content-center"
-                style={{ marginTop: "-19px" }}
-              >
-                <a className="btn btn-square mx-1" href="">
-                  <i className="fab fa-facebook-f" />
-                </a>
-                <a className="btn btn-square mx-1" href="">
-                  <i className="fab fa-twitter" />
-                </a>
-                <a className="btn btn-square mx-1" href="">
-                  <i className="fab fa-instagram" />
-                </a>
-              </div>
-              <div className="text-center p-4">
-                <h5 className="mb-0">Full Name</h5>
-                <small>Designation</small>
+            <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+              <div className="team-item">
+                <div className="overflow-hidden">
+                  <img className="img-fluid" src="assets/img/team-2.jpg" alt="" />
+                </div>
+                <div
+                  className="position-relative d-flex justify-content-center"
+                  style={{ marginTop: "-19px" }}
+                >
+                  <a className="btn btn-square mx-1" href="">
+                    <i className="fab fa-facebook-f" />
+                  </a>
+                  <a className="btn btn-square mx-1" href="">
+                    <i className="fab fa-twitter" />
+                  </a>
+                  <a className="btn btn-square mx-1" href="">
+                    <i className="fab fa-instagram" />
+                  </a>
+                </div>
+                <div className="text-center p-4">
+                  <h5 className="mb-0">Full Name</h5>
+                  <small>Designation</small>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-            <div className="team-item">
-              <div className="overflow-hidden">
-                <img className="img-fluid" src="assets/img/team-4.jpg" alt="" />
+            <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div className="team-item">
+                <div className="overflow-hidden">
+                  <img className="img-fluid" src="assets/img/team-3.jpg" alt="" />
+                </div>
+                <div
+                  className="position-relative d-flex justify-content-center"
+                  style={{ marginTop: "-19px" }}
+                >
+                  <a className="btn btn-square mx-1" href="">
+                    <i className="fab fa-facebook-f" />
+                  </a>
+                  <a className="btn btn-square mx-1" href="">
+                    <i className="fab fa-twitter" />
+                  </a>
+                  <a className="btn btn-square mx-1" href="">
+                    <i className="fab fa-instagram" />
+                  </a>
+                </div>
+                <div className="text-center p-4">
+                  <h5 className="mb-0">Full Name</h5>
+                  <small>Designation</small>
+                </div>
               </div>
-              <div
-                className="position-relative d-flex justify-content-center"
-                style={{ marginTop: "-19px" }}
-              >
-                <a className="btn btn-square mx-1" href="">
-                  <i className="fab fa-facebook-f" />
-                </a>
-                <a className="btn btn-square mx-1" href="">
-                  <i className="fab fa-twitter" />
-                </a>
-                <a className="btn btn-square mx-1" href="">
-                  <i className="fab fa-instagram" />
-                </a>
-              </div>
-              <div className="text-center p-4">
-                <h5 className="mb-0">Full Name</h5>
-                <small>Designation</small>
+            </div>
+            <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div className="team-item">
+                <div className="overflow-hidden">
+                  <img className="img-fluid" src="assets/img/team-4.jpg" alt="" />
+                </div>
+                <div
+                  className="position-relative d-flex justify-content-center"
+                  style={{ marginTop: "-19px" }}
+                >
+                  <a className="btn btn-square mx-1" href="">
+                    <i className="fab fa-facebook-f" />
+                  </a>
+                  <a className="btn btn-square mx-1" href="">
+                    <i className="fab fa-twitter" />
+                  </a>
+                  <a className="btn btn-square mx-1" href="">
+                    <i className="fab fa-instagram" />
+                  </a>
+                </div>
+                <div className="text-center p-4">
+                  <h5 className="mb-0">Full Name</h5>
+                  <small>Designation</small>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    {/* Team End */}
-    {/* Testimonial Start */}
-    <div className="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-      <div className="container">
-        <div className="text-center">
+      {/* Team End */}
+      {/* Testimonial Start */}
+      <div className="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div className="container">
+          {/* <div className="text-center">
           <h6 className="section-title bg-white text-center text-primary px-3">
             Testimonial
           </h6>
           <h1 className="mb-5">Our Clients Say!!!</h1>
-        </div>
-        <div className="owl-carousel testimonial-carousel position-relative">
-          <div className="testimonial-item bg-white text-center border p-4">
-            <img
-              className="bg-white rounded-circle shadow p-1 mx-auto mb-3"
-              src="assets/img/testimonial-1.jpg"
-              style={{ width: 80, height: 80 }}
-            />
-            <h5 className="mb-0">John Doe</h5>
-            <p>New York, USA</p>
-            <p className="mb-0">
-              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam
-              amet diam et eos. Clita erat ipsum et lorem et sit.
-            </p>
-          </div>
-          <div className="testimonial-item bg-white text-center border p-4">
-            <img
-              className="bg-white rounded-circle shadow p-1 mx-auto mb-3"
-              src="assets/img/testimonial-2.jpg"
-              style={{ width: 80, height: 80 }}
-            />
-            <h5 className="mb-0">John Doe</h5>
-            <p>New York, USA</p>
-            <p className="mt-2 mb-0">
-              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam
-              amet diam et eos. Clita erat ipsum et lorem et sit.
-            </p>
-          </div>
-          <div className="testimonial-item bg-white text-center border p-4">
-            <img
-              className="bg-white rounded-circle shadow p-1 mx-auto mb-3"
-              src="assets/img/testimonial-3.jpg"
-              style={{ width: 80, height: 80 }}
-            />
-            <h5 className="mb-0">John Doe</h5>
-            <p>New York, USA</p>
-            <p className="mt-2 mb-0">
-              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam
-              amet diam et eos. Clita erat ipsum et lorem et sit.
-            </p>
-          </div>
-          <div className="testimonial-item bg-white text-center border p-4">
-            <img
-              className="bg-white rounded-circle shadow p-1 mx-auto mb-3"
-              src="assets/img/testimonial-4.jpg"
-              style={{ width: 80, height: 80 }}
-            />
-            <h5 className="mb-0">John Doe</h5>
-            <p>New York, USA</p>
-            <p className="mt-2 mb-0">
-              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam
-              amet diam et eos. Clita erat ipsum et lorem et sit.
-            </p>
+        </div> */}
+          <div className="owl-carousel testimonial-carousel position-relative">
+            <div className="testimonial-item bg-white text-center border p-4">
+              <img
+                className="bg-white rounded-circle shadow p-1 mx-auto mb-3"
+                src="assets/img/testimonial-1.jpg"
+                style={{ width: 80, height: 80 }}
+              />
+              <h5 className="mb-0">John Doe</h5>
+              <p>New York, USA</p>
+              <p className="mb-0">
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam
+                amet diam et eos. Clita erat ipsum et lorem et sit.
+              </p>
+            </div>
+            <div className="testimonial-item bg-white text-center border p-4">
+              <img
+                className="bg-white rounded-circle shadow p-1 mx-auto mb-3"
+                src="assets/img/testimonial-2.jpg"
+                style={{ width: 80, height: 80 }}
+              />
+              <h5 className="mb-0">John Doe</h5>
+              <p>New York, USA</p>
+              <p className="mt-2 mb-0">
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam
+                amet diam et eos. Clita erat ipsum et lorem et sit.
+              </p>
+            </div>
+            <div className="testimonial-item bg-white text-center border p-4">
+              <img
+                className="bg-white rounded-circle shadow p-1 mx-auto mb-3"
+                src="assets/img/testimonial-3.jpg"
+                style={{ width: 80, height: 80 }}
+              />
+              <h5 className="mb-0">John Doe</h5>
+              <p>New York, USA</p>
+              <p className="mt-2 mb-0">
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam
+                amet diam et eos. Clita erat ipsum et lorem et sit.
+              </p>
+            </div>
+            <div className="testimonial-item bg-white text-center border p-4">
+              <img
+                className="bg-white rounded-circle shadow p-1 mx-auto mb-3"
+                src="assets/img/testimonial-4.jpg"
+                style={{ width: 80, height: 80 }}
+              />
+              <h5 className="mb-0">John Doe</h5>
+              <p>New York, USA</p>
+              <p className="mt-2 mb-0">
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam
+                amet diam et eos. Clita erat ipsum et lorem et sit.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    {/* Testimonial End */}  
+      {/* Testimonial End */}
     </div>
   )
 }

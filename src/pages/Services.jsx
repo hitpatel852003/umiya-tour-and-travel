@@ -12,8 +12,8 @@ function Services() {
           </h1>
           <nav aria-label="breadcrumb">
             <ol className="breadcrumb justify-content-center">
-              <li className="breadcrumb-item">
-                <a href="/">Home</a>
+              <li className="breadcrumb-item" >
+                <a href="/" style={{color:"#0B1A39"}}>Home</a>
               </li>
               <li
                 className="breadcrumb-item text-white active"
@@ -31,105 +31,65 @@ function Services() {
       <div className="container-xxl py-5">
       <div className="container">
         <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
-          <h6 className="section-title bg-white text-center text-primary px-3">
+          {/* <h6 className="section-title bg-white text-center text-primary px-3">
             Services
-          </h6>
-          <h1 className="mb-5">Our Services</h1>
+          </h6> */}
+          <h1 className="mb-5" style={{color:"#0B1A39"}}>Our Services</h1>
         </div>
         <div className="row g-4">
           <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
             <div className="service-item rounded pt-3">
               <div className="p-4">
-                <i className="fa fa-3x fa-globe text-primary mb-4" />
-                <h5>WorldWide Tours</h5>
-                <p>
-                  Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
-                  amet diam
-                </p>
+                <i className="fa fa-3x fa-plane mb-4" style={{color:"#0B1A39"}}/>
+                <h5>Flights Booking</h5>
               </div>
             </div>
           </div>
           <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
             <div className="service-item rounded pt-3">
               <div className="p-4">
-                <i className="fa fa-3x fa-hotel text-primary mb-4" />
-                <h5>Hotel Reservation</h5>
-                <p>
-                  Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
-                  amet diam
-                </p>
+                <i className="fa fa-3x fa-hotel mb-4" style={{color:"#0B1A39"}}/>
+                <h5>Hotel Booking</h5>
               </div>
             </div>
           </div>
           <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
             <div className="service-item rounded pt-3">
               <div className="p-4">
-                <i className="fa fa-3x fa-user text-primary mb-4" />
-                <h5>Travel Guides</h5>
-                <p>
-                  Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
-                  amet diam
-                </p>
+                <i className="fa fa-3x fa-users mb-4" style={{color:"#0B1A39"}}/>
+                <h5>Group Booking</h5>
               </div>
             </div>
           </div>
           <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
             <div className="service-item rounded pt-3">
               <div className="p-4">
-                <i className="fa fa-3x fa-cog text-primary mb-4" />
-                <h5>Event Management</h5>
-                <p>
-                  Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
-                  amet diam
-                </p>
+                <i className="fa fa-3x fa-umbrella-beach mb-4" style={{color:"#0B1A39"}}/>
+                <h5>Holiday Packages</h5>
               </div>
             </div>
           </div>
           <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
             <div className="service-item rounded pt-3">
               <div className="p-4">
-                <i className="fa fa-3x fa-globe text-primary mb-4" />
-                <h5>WorldWide Tours</h5>
-                <p>
-                  Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
-                  amet diam
-                </p>
+                <i className="fa fa-3x fa-ticket-alt mb-4" style={{color:"#0B1A39"}}/>
+                <h5>Ticket Booking</h5>
               </div>
             </div>
           </div>
           <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
             <div className="service-item rounded pt-3">
               <div className="p-4">
-                <i className="fa fa-3x fa-hotel text-primary mb-4" />
-                <h5>Hotel Reservation</h5>
-                <p>
-                  Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
-                  amet diam
-                </p>
+                <i className="fa fa-3x fa-briefcase mb-4" style={{color:"#0B1A39"}}/>
+                <h5>Mice</h5>
               </div>
             </div>
           </div>
           <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
             <div className="service-item rounded pt-3">
               <div className="p-4">
-                <i className="fa fa-3x fa-user text-primary mb-4" />
-                <h5>Travel Guides</h5>
-                <p>
-                  Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
-                  amet diam
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-            <div className="service-item rounded pt-3">
-              <div className="p-4">
-                <i className="fa fa-3x fa-cog text-primary mb-4" />
-                <h5>Event Management</h5>
-                <p>
-                  Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
-                  amet diam
-                </p>
+                <i className="fa fa-3x fa-heart mb-4" style={{color:"#0B1A39"}}/>
+                <h5>Destination Wedding</h5>
               </div>
             </div>
           </div>
@@ -138,7 +98,7 @@ function Services() {
     </div>
     {/* Service End */}
     {/* Testimonial Start */}
-    <div className="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+    {/* <div className="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
       <div className="container">
         <div className="text-center">
           <h6 className="section-title bg-white text-center text-primary px-3">
@@ -201,7 +161,7 @@ function Services() {
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
     {/* Testimonial End */}
     </div>
   )

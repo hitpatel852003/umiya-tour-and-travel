@@ -20,7 +20,7 @@ function Header() {
     {/* Spinner End */}
 
     {/* Topbar Start */}
-    <div className="container-fluid bg-dark px-5 d-none d-lg-block">
+    {/* <div className="container-fluid bg-dark px-5 d-none d-lg-block">
       <div className="row gx-0">
         <div className="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
           <div
@@ -79,15 +79,15 @@ function Header() {
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
     {/* Topbar End */}
     {/* Navbar & Hero Start */}
     <div className="container-fluid position-relative p-0">
       <nav className="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
         <Link to="/" className="navbar-brand p-0">
-          <h1 className="text-primary m-0">
-            <i className="fa fa-map-marker-alt me-3" />
-            Tourist
+          <h1 className="m-0" style={{color:"#0B1A39"}}>
+            {/* <i className="fa fa-map-marker-alt me-3" /> */}
+            Umiya Toure&Travels
           </h1>
           {/* <img src="img/logo.png" alt="Logo"> */}
         </Link>
@@ -113,7 +113,7 @@ function Header() {
             <Link to="/Packages" className="nav-item nav-link">
               Packages
             </Link>
-            <div className="nav-item dropdown">
+            {/* <div className="nav-item dropdown">
               <Link
                 to="#"
                 className="nav-link dropdown-toggle"
@@ -138,14 +138,14 @@ function Header() {
                   404 Page
                 </Link>
               </div>
-            </div>
+            </div> */}
             <Link to="/Contact" className="nav-item nav-link">
               Contact
             </Link>
           </div>
-          <Link to="/" className="btn btn-primary rounded-pill py-2 px-4">
-            Register
-          </Link>
+          {/* <Link to="/" className="rounded-pill py-2 px-4" style={{backgroundColor:"#0B1A39", color:"white"}}>
+            Whatapp
+          </Link> */}
         </div>
       </nav>
     </div>
