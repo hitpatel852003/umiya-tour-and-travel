@@ -57,73 +57,11 @@ export default function Footer() {
               </a>
             </div>
           </div>
-          <div className="col-lg-3 col-md-6">
-            <h4 className="text-white mb-3">Gallery</h4>
-            <div className="row g-2 pt-2">
-              <div className="col-4">
-                <img
-                  className="img-fluid bg-light p-1"
-                  src="assets/img/package-1.jpg"
-                  alt=""
-                />
-              </div>
-              <div className="col-4">
-                <img
-                  className="img-fluid bg-light p-1"
-                  src="assets/img/package-2.jpg"
-                  alt=""
-                />
-              </div>
-              <div className="col-4">
-                <img
-                  className="img-fluid bg-light p-1"
-                  src="assets/img/package-3.jpg"
-                  alt=""
-                />
-              </div>
-              <div className="col-4">
-                <img
-                  className="img-fluid bg-light p-1"
-                  src="assets/img/package-2.jpg"
-                  alt=""
-                />
-              </div>
-              <div className="col-4">
-                <img
-                  className="img-fluid bg-light p-1"
-                  src="assets/img/package-3.jpg"
-                  alt=""
-                />
-              </div>
-              <div className="col-4">
-                <img
-                  className="img-fluid bg-light p-1"
-                  src="assets/img/package-1.jpg"
-                  alt=""
-                />
-              </div>
-            </div>
+          <div className="col-lg-6 col-md-6" style={{display:"flex", justifyContent:"center",alignItems:"center"}}>
+            <h1 style={{color:"white"}}>Umiya Tour&Travels</h1>
+            <p></p>
           </div>
-          <div className="col-lg-3 col-md-6">
-            <h4 className="text-white mb-3">Newsletter</h4>
-            <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-            <div
-              className="position-relative mx-auto"
-              style={{ maxWidth: 400 }}
-            >
-              <input
-                className="form-control border-primary w-100 py-3 ps-4 pe-5"
-                type="text"
-                placeholder="Your email"
-              />
-              <button
-                type="button"
-                className="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
-              >
-                SignUp
-              </button>
-            </div>
-          </div>
+          
         </div>
       </div>
       <div className="container">

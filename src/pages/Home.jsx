@@ -1,8 +1,48 @@
-import React from 'react'
-
-
+import React, { useState } from 'react'
 
 export default function Home() {
+  const handleClick = () => {
+    const encodedMessage = encodeURIComponent('Hello umiya tour and travels');
+    const businessNumber = '919998425829';
+    const url = `https://wa.me/${businessNumber}?text=${encodedMessage}`;
+
+    // Use location.href on mobile to avoid popup blocking
+    const isMobile = /Android|iPhone|iPad/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      window.location.href = url;
+    } else {
+      window.open(url, '_blank');
+    }
+  };
+
+  // const [showForm, setShowForm] = useState(false);
+  // const [formData, setFormData] = useState({
+  //   name: '',
+  //   email: '',
+  //   service: '',
+  //   message: ''
+  // });
+
+  // const handleChange = (e) => {
+  //   setFormData(prev => ({
+  //     ...prev,
+  //     [e.target.name]: e.target.value
+  //   }));
+  // };
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+
+  //   const phoneNumber = '919998425829'; // Your WhatsApp Business number (include country code, no + or spaces)
+  //   const message = `Hello, I would like to inquire:\n\nName: ${formData.name}\nEmail: ${formData.email}\nService: ${formData.service}\nMessage: ${formData.message}`;
+
+  //   const encodedMessage = encodeURIComponent(message);
+  //   const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+  //   window.open(whatsappURL, '_blank');
+  // };
+
   return (
     <div>
       <div className="container-fluid bg-primary py-5 mb-5 hero-header">
@@ -29,11 +69,77 @@ export default function Home() {
                     marginTop: 7, backgroundColor: "#0B1A39",
                     color: "white",
                     border: "1px solid  #0B1A39",
-                    height: "50px"
+                    height: "50px",
                   }}
+                  onClick={handleClick}
                 >
                   Connect To Whatapp
                 </button>
+
+                {/* <div className="p-4">
+                  {!showForm ? (
+                    <button
+                      onClick={() => setShowForm(true)}
+                      className="bg-green-600 text-white px-4 py-2 rounded"
+                    >
+                      Contact Us on WhatsApp
+                    </button>
+                  ) : (
+                    <form onSubmit={handleSubmit} className="space-y-4 max-w-md bg-gray-100 p-4 rounded shadow">
+                      <div>
+                        <label className="block mb-1 font-medium">Name</label>
+                        <input
+                          type="text"
+                          name="name"
+                          value={formData.name}
+                          onChange={handleChange}
+                          className="w-full border px-3 py-2 rounded"
+                          required
+                        />
+                      </div>
+                      <div>
+                        <label className="block mb-1 font-medium">Email</label>
+                        <input
+                          type="email"
+                          name="email"
+                          value={formData.email}
+                          onChange={handleChange}
+                          className="w-full border px-3 py-2 rounded"
+                          required
+                        />
+                      </div>
+                      <div>
+                        <label className="block mb-1 font-medium">Service</label>
+                        <input
+                          type="text"
+                          name="service"
+                          value={formData.service}
+                          onChange={handleChange}
+                          className="w-full border px-3 py-2 rounded"
+                          placeholder="e.g. Course Purchase, Art Inquiry"
+                          required
+                        />
+                      </div>
+                      <div>
+                        <label className="block mb-1 font-medium">Message</label>
+                        <textarea
+                          name="message"
+                          value={formData.message}
+                          onChange={handleChange}
+                          className="w-full border px-3 py-2 rounded"
+                          rows="4"
+                          required
+                        />
+                      </div>
+                      <button
+                        type="submit"
+                        className="bg-blue-600 text-white px-4 py-2 rounded"
+                      >
+                        Submit & Chat on WhatsApp
+                      </button>
+                    </form>
+                  )}
+                </div> */}
               </div>
             </div>
           </div>
@@ -123,7 +229,7 @@ export default function Home() {
       <div className="container-xxl py-5">
         <div className="container">
           <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h6 className="section-title bg-white text-center px-3" style={{ color: "#0B1A39" }}>
+            <h6 className="section-title bg-white text-center px-3" style={{ color: "brown" }}>
               Services
             </h6>
             <h1 className="mb-5" style={{ color: "#0B1A39" }}>Our Services</h1>
@@ -191,72 +297,72 @@ export default function Home() {
       {/* Service End */}
       {/* Destination Start inida */}
       <div className="container-xxl py-5 destination">
-      <div className="container">
-        <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
-          <h6 className="section-title bg-white text-center text-primary px-3">
-            Destination
-          </h6>
-          <h1 className="mb-5">Popular Indian Destination</h1>
-        </div>
-        <div className="row g-3">
-          <div className="col-lg-7 col-md-6">
-            <div className="row g-3">
-            <div
-                className="col-lg-6 col-md-12 wow zoomIn"
-                data-wow-delay="0.3s"
-              >
-                <a
-                  className="position-relative d-block overflow-hidden"
-                  href=""
+        <div className="container">
+          <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 className="section-title bg-white text-center px-3" style={{ color: "brown" }}>
+              Destination
+            </h6>
+            <h1 className="mb-5">Popular Indian Destination</h1>
+          </div>
+          <div className="row g-3">
+            <div className="col-lg-7 col-md-6">
+              <div className="row g-3">
+                <div
+                  className="col-lg-6 col-md-12 wow zoomIn"
+                  data-wow-delay="0.3s"
                 >
-                  <img
-                    className="img-fluid"
-                    src="assets/img/taj.jpg"
-                    alt=""
-                  />
-                  <div className="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">
-                  Agra, Uttar Pradesh
-                  </div>
-                </a>
-              </div>
-              <div
-                className="col-lg-6 col-md-12 wow zoomIn"
-                data-wow-delay="0.3s"
-              >
-                <a
-                  className="position-relative d-block overflow-hidden"
-                  href=""
+                  <a
+                    className="position-relative d-block overflow-hidden"
+                    href=""
+                  >
+                    <img
+                      className="img-fluid"
+                      src="assets/img/taj.jpg"
+                      alt=""
+                    />
+                    <div className="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">
+                      Agra, Uttar Pradesh
+                    </div>
+                  </a>
+                </div>
+                <div
+                  className="col-lg-6 col-md-12 wow zoomIn"
+                  data-wow-delay="0.3s"
                 >
-                  <img
-                    className="img-fluid"
-                    src="assets/img/goa.jpg"
-                    alt=""
-                  />
-                  
-                  <div className="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">
-                    Goa
-                  </div>
-                </a>
-              </div>
-              <div
-                className="col-lg-12 col-md-12 wow zoomIn"
-                data-wow-delay="0.5s"
-              >
-                <a
-                  className="position-relative d-block overflow-hidden"
-                  href=""
+                  <a
+                    className="position-relative d-block overflow-hidden"
+                    href=""
+                  >
+                    <img
+                      className="img-fluid"
+                      src="assets/img/goa.jpg"
+                      alt=""
+                    />
+
+                    <div className="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">
+                      Goa
+                    </div>
+                  </a>
+                </div>
+                <div
+                  className="col-lg-12 col-md-12 wow zoomIn"
+                  data-wow-delay="0.5s"
                 >
-                  <img
-                    className="img-fluid"
-                    src="assets/img/kerala.jpg"
-                    alt=""
-                  />
-                  <div className="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">
-                  Kerala
-                  </div>
-                </a>
-              </div>
-              {/* <div
+                  <a
+                    className="position-relative d-block overflow-hidden"
+                    href=""
+                  >
+                    <img
+                      className="img-fluid"
+                      src="assets/img/kerala.jpg"
+                      alt=""
+                    />
+                    <div className="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">
+                      Kerala
+                    </div>
+                  </a>
+                </div>
+                {/* <div
                 className="col-lg-6 col-md-12 wow zoomIn"
                 data-wow-delay="0.3s"
               >
@@ -274,83 +380,83 @@ export default function Home() {
                   </div>
                 </a>
               </div> */}
-            </div>
-          </div>
-          <div
-            className="col-lg-5 col-md-6 wow zoomIn"
-            data-wow-delay="0.7s"
-            style={{ minHeight: 350 }}
-          >
-            <a
-              className="position-relative d-block h-100 overflow-hidden"
-              href=""
-            >
-              <img
-                className="img-fluid position-absolute w-100 h-100"
-                src="assets/img/jaipur.jpg"
-                alt=""
-                style={{ objectFit: "cover" }}
-              />
-              <div className="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">
-              Jaipur, Rajasthan
               </div>
-            </a>
+            </div>
+            <div
+              className="col-lg-5 col-md-6 wow zoomIn"
+              data-wow-delay="0.7s"
+              style={{ minHeight: 350 }}
+            >
+              <a
+                className="position-relative d-block h-100 overflow-hidden"
+                href=""
+              >
+                <img
+                  className="img-fluid position-absolute w-100 h-100"
+                  src="assets/img/jaipur.jpg"
+                  alt=""
+                  style={{ objectFit: "cover" }}
+                />
+                <div className="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">
+                  Jaipur, Rajasthan
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
       {/* Destination Start */}
-       {/* Destination Start world */}
-       <div className="container-xxl py-5 destination">
-      <div className="container">
-        <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
-          <h6 className="section-title bg-white text-center text-primary px-3">
-            Destination
-          </h6>
-          <h1 className="mb-5">Popular International Destinations</h1>
-        </div>
-        <div className="row g-3">
-          <div
-            className="col-lg-5 col-md-6 wow zoomIn"
-            data-wow-delay="0.7s"
-            style={{ minHeight: 350 }}
-          >
-            <a
-              className="position-relative d-block h-100 overflow-hidden"
-              href=""
-            >
-              <img
-                className="img-fluid position-absolute w-100 h-100"
-                src="assets/img/burj khalifa.jpg"
-                alt=""
-                style={{ objectFit: "cover" }}
-              />
-              <div className="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">
-              Dubai, UAE
-              </div>
-            </a>
+      {/* Destination Start world */}
+      <div className="container-xxl py-5 destination">
+        <div className="container">
+          <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 className="section-title bg-white text-center px-3" style={{ color: "brown" }}>
+              Destination
+            </h6>
+            <h1 className="mb-5">Popular International Destinations</h1>
           </div>
-          <div className="col-lg-7 col-md-6">
-            <div className="row g-3">
+          <div className="row g-3">
             <div
-                className="col-lg-12 col-md-12 wow zoomIn"
-                data-wow-delay="0.3s"
+              className="col-lg-5 col-md-6 wow zoomIn"
+              data-wow-delay="0.7s"
+              style={{ minHeight: 350 }}
+            >
+              <a
+                className="position-relative d-block h-100 overflow-hidden"
+                href=""
               >
-                <a
-                  className="position-relative d-block overflow-hidden"
-                  href=""
+                <img
+                  className="img-fluid position-absolute w-100 h-100"
+                  src="assets/img/burj khalifa.jpg"
+                  alt=""
+                  style={{ objectFit: "cover" }}
+                />
+                <div className="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">
+                  Dubai, UAE
+                </div>
+              </a>
+            </div>
+            <div className="col-lg-7 col-md-6">
+              <div className="row g-3">
+                <div
+                  className="col-lg-12 col-md-12 wow zoomIn"
+                  data-wow-delay="0.3s"
                 >
-                  <img
-                    className="img-fluid"
-                    src="assets/img/thailand.jpg"
-                    alt=""
-                  />
-                  <div className="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">
-                  Thailand
-                  </div>
-                </a>
-              </div>
-              {/* <div
+                  <a
+                    className="position-relative d-block overflow-hidden"
+                    href=""
+                  >
+                    <img
+                      className="img-fluid"
+                      src="assets/img/thailand.jpg"
+                      alt=""
+                    />
+                    <div className="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">
+                      Thailand
+                    </div>
+                  </a>
+                </div>
+                {/* <div
                 className="col-lg-6 col-md-12 wow zoomIn"
                 data-wow-delay="0.3s"
               >
@@ -369,47 +475,47 @@ export default function Home() {
                   </div>
                 </a>
               </div> */}
-              <div
-                className="col-lg-6 col-md-12 wow zoomIn"
-                data-wow-delay="0.5s"
-              >
-                <a
-                  className="position-relative d-block overflow-hidden"
-                  href=""
+                <div
+                  className="col-lg-6 col-md-12 wow zoomIn"
+                  data-wow-delay="0.5s"
                 >
-                  <img
-                    className="img-fluid"
-                    src="assets/img/maldives.jpg"
-                    alt=""
-                  />
-                  <div className="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">
-                  Maldives
-                  </div>
-                </a>
-              </div>
-              <div
-                className="col-lg-6 col-md-12 wow zoomIn"
-                data-wow-delay="0.3s"
-              >
-                <a
-                  className="position-relative d-block overflow-hidden"
-                  href=""
+                  <a
+                    className="position-relative d-block overflow-hidden"
+                    href=""
+                  >
+                    <img
+                      className="img-fluid"
+                      src="assets/img/maldives.jpg"
+                      alt=""
+                    />
+                    <div className="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">
+                      Maldives
+                    </div>
+                  </a>
+                </div>
+                <div
+                  className="col-lg-6 col-md-12 wow zoomIn"
+                  data-wow-delay="0.3s"
                 >
-                  <img
-                    className="img-fluid"
-                    src="assets/img/singapur1.jpg"
-                    alt=""
-                  />
-                  <div className="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">
-                  SIngapur
-                  </div>
-                </a>
+                  <a
+                    className="position-relative d-block overflow-hidden"
+                    href=""
+                  >
+                    <img
+                      className="img-fluid"
+                      src="assets/img/singapur1.jpg"
+                      alt=""
+                    />
+                    <div className="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">
+                      SIngapur
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
       {/* Destination Start */}
       {/* Package Start */}
       {/* <div className="container-xxl py-5">
@@ -755,7 +861,7 @@ export default function Home() {
       <div className="container-xxl py-5">
         <div className="container">
           <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h6 className="section-title bg-white text-center text-primary px-3">
+            <h6 className="section-title bg-white text-center px-3" style={{ color: "brown" }}>
               Travel Guide
             </h6>
             <h1 className="mb-5">Meet Our Guide</h1>

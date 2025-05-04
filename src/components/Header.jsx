@@ -87,7 +87,7 @@ function Header() {
         <Link to="/" className="navbar-brand p-0">
           <h1 className="m-0" style={{color:"#0B1A39"}}>
             {/* <i className="fa fa-map-marker-alt me-3" /> */}
-            Umiya Toure&Travels
+            Umiya Tour&Travels
           </h1>
           {/* <img src="img/logo.png" alt="Logo"> */}
         </Link>
